@@ -1,0 +1,13 @@
+body{
+    font-size: 14px;
+    background-color: #f5e9d2; 
+}
+#container {
+    background-color: #ffffff; 
+    width: 700px;
+    margin: 0 auto;
+    padding: 25px; 
+}
+.button:hover {
+    color: #000000;
+}

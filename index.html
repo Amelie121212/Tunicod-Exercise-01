@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulaire Tunicod</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <form id="container" action="#" methode="post">
+            <h1>Formulaire Type</h1>
+            <fieldset>
+                <h3>Coordonnees:</h3>
+                <label for="nom"></label>Nom:<br>
+                <input type="text" name="nom" id="nom" autofocus><br>
+                <label for="prenom">Prenom:</label><br>
+                <input type="text" name="prenom" id="prenom"><br><br>
+                <label>
+                    Je désire recevoir une documentation
+                    <input type="checkbox" name="documentation" value="oui">
+                    </label><br><br>
+                Pays:
+                <select name="pays">
+                    <option value="suisse" id="suisse">CH: Suisse</option>
+                    <option value="allemagne" id="allemagne">D: Allemagne</option>
+                </select><br><br>
+                Sex:
+                <label>
+                    <input type="radio" name="sex" Value="masculin">
+                    Masculin
+                </label>
+                <label>
+                    <input type="radio" name="sex" Value="Feminin">
+                    Féminin
+                </label><br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <h3>Domaine(s) d'activite:</h3>
+                <p>Vous pouvez en choisir plus qu'un...</p>
+                <label>
+                    <input type="checkbox" name="domaine" value="pedagogie">
+                    Pedagogie
+                </label>
+                <label>
+                    <input type="checkbox" name="domaine" value="psychologie">
+                    Psychologie
+                </label>
+                <label>
+                    <input type="checkbox" name="domaine" value="informatique">
+                    Informatique
+                </label>
+                <label>
+                    <input type="checkbox" name="domaine" value="autre">
+                    Autre
+                </label><br><br>
+                <h4>Commentaire:</h4>
+                <p>Si vous voulez, vous pouvez decrire vos activités ou interets.</p>
+                <textarea name="commentaire" cols="90" rows="6" placeholder="Taper votre commentaire ici."></textarea>
+            </fieldset>
+            <br>
+            <input type="reset" class="button" value="Effacer les données">
+            <input type="submit" class="button" value="Enregistrer les données" onclick="submited()">
+        </form>
+        <script>
+            function submited() {
+                alert("Les informations ont été soumises");
+            }
+        </script>
+    </body>
+</html>
